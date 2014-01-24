@@ -8,6 +8,7 @@
 
 #import "FBCDAppDelegate.h"
 #import "FBCDViewController_1.h"
+#import "FBCDViewController_2.h"
 @implementation FBCDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    FBCDViewController_1 * first = [[FBCDViewController_1 alloc]init];
+    FBCDViewController_2 * first = [[FBCDViewController_2 alloc]init];
     UINavigationController * nag = [[UINavigationController alloc]initWithRootViewController:first];
     self.window.rootViewController = nag;
     [self.window makeKeyAndVisible];
